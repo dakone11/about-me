@@ -1,0 +1,57 @@
+/* esto es el body*/
+body {
+    background-color:pink;}
+/* esto son links*/
+.linkcolorverde {
+    color: seagreen;}
+a {
+     color: snow;}
+a:visited {
+    color: tomato;}
+.linkcolorverde:visited {
+    color: slategrey;}
+.linkcolorverde:hover {
+    color: violet;}
+.linkcolorverde:active {
+    color: rgb(130, 137, 238);}
+
+
+/* esto son inputs */
+input[type="text"] {
+    box-shadow: 0 0 2px 2px brown;
+}
+
+input[type="tel"]:focus {
+    box-shadow: 0 0 1px 15px rgb(23, 21, 167);
+}       
+input[type="checkbox"]:focus {
+    box-shadow: 0 0 1px 15px rgb(167, 157, 21);
+}                                       
+input[type="email"]:focus {
+    box-shadow: 0 0 1px 15px rgb(167, 21, 106);
+}   
+input[type="checkbox"]:focus {
+    box-shadow: 0 0 1px 15px rgb(167, 157, 21);
+} 
+input:checked ~ p {
+    
+    color: rgb(236, 83, 12);}
+    p {
+        color: crimson;}
+        span { 
+            color: darkgreen;
+        }
+        .amarillo {
+            color: darkkhaki;
+        }
+        span.amarillo {
+            color: deeppink;
+        }
+        p span.amarillo {
+            color: midnightblue;
+        }
+        .bar .amarillo {color: olive;}
+        p.bar span.amarillo { color: palegreen;}
+        #bar {color: peru;}
+        span#bar {color: rgb(37, 33, 29);}
+        
