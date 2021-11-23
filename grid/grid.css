@@ -1,12 +1,14 @@
+/*-------------- --------------------*/
 *{box-sizing: border-box;}
-
-.grid {
-        
+/*-------------- div padre contenedor--------------------*/
+.grid {  
         margin: 8px;
         width: 100%;
         background-color: aqua;
         
       }
+
+/*-------------- div hijos con tamaño definido (%)--------------------*/
       .grid_cell_100 {
         margin: 8px;
         padding: 12px;
@@ -14,8 +16,7 @@
         background-color: blue;
          
       }
-      .grid_cell_50 {
-          
+      .grid_cell_50 {  
         margin: 8px;
         background-color: rgb(150, 236, 129);
         padding: 12px;
@@ -24,14 +25,20 @@
       
           
       .grid_cell_25 {
-          margin: 8px;
-          background-color: chocolate;
-          padding: 12px;
+        margin: 8px;
+        background-color: chocolate;
+        padding: 12px;
+      }
+      .grid_cell_75 {
+        margin: 8px;
+        background-color: rgb(221, 126, 57);
+        padding: 12px;
       }
       
 
-
-@media all and ( min-width:600px) {
+/*-------------- cambio de resolución 600px--------------------*/
+@media all and ( min-width:600px) 
+{
     .grid {
         display: flex;
         flex-wrap: wrap;
@@ -47,10 +54,7 @@
          
       }
       .grid_cell_50 {
-          
-        
         background-color: rgb(150, 236, 129);
-       
         flex: 0 0 calc(50% - 16px);
         margin: 8px;
         padding: 12px;
@@ -59,10 +63,17 @@
           
       .grid_cell_25 {
           
-          margin: 8px;
-          flex: 0 0 calc(25% - 16px);
-          background-color: chocolate;
-          padding: 12px;
+        margin: 8px;
+        flex: 0 0 calc(25% - 16px);
+        background-color: chocolate;
+        padding: 12px;
+      }
+      .grid_cell_75 {
+          
+        margin: 8px;
+        flex: 0 0 calc(75% - 16px);
+        background-color: rgb(221, 126, 57);
+        padding: 12px;
       }
       
 }
