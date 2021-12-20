@@ -5,14 +5,23 @@ html {
 body, html {
   height: 100%;
 }
-
+/*******************************************body************************************************/
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background: -webkit-gradient(linear, left top, right top, from(#6e6e6e), color-stop(40%, #cdcdcd), to(#fff));
   background: linear-gradient(90deg, #6e6e6e 0%, #cdcdcd 40%, #fff 100%);
   color: #d75893;
 }
+/*******************************************text************************************************/
 
+p {
+  color: #383838;
+}
+
+h1 {
+  color: #d75893;
+}
+/*******************************************avatar************************************************/
 .avatar {
   width: 200px;
   height: 200px;
@@ -58,7 +67,7 @@ body {
   padding: 6px;
   margin: 12px;
 }
-
+/*******************************************header/nav************************************************/
 header {
   width: 100%;
   display: -webkit-box;
@@ -104,12 +113,12 @@ header {
           justify-content: center;
   margin: 18px;
 }
-
+/*******************************************      section              ************************************************/
 .section {
   position: relative;
   text-align: center;
 }
-
+/*******************************************          section/icons             ************************************************/
 .iconos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +143,7 @@ header {
   border-color: #d75893;
   color: #141414;
 }
-
+/*******************************************          section/text             ************************************************/
 .text_area {
   color: #383838;
   margin: 12px;
@@ -146,6 +155,31 @@ header {
   border-radius: 25px;
   margin: 12px;
   padding: 12px;
+}
+
+/*******************************************          grid             ************************************************/
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2048px;
+  width: 80%;
+}
+.grid__cell {
+  padding: 12px;
+  margin: 11px;
+}
+.grid__cell--50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(10% - 6px);
+          flex: 0 0 calc(10% - 6px);
+}
+.grid__cell--10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
 }
 
 /*------------------- @media---------------------*/
@@ -202,10 +236,3 @@ header {
           flex: 0 0 10%;
 }
 
-p {
-  color: #383838;
-}
-
-h1 {
-  color: #d75893;
-}
